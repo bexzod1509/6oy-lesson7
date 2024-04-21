@@ -1,0 +1,64 @@
+.c {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.c h1 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -3%;
+  text-align: left;
+  max-width: 587px;
+}
+.c p {
+  color: rgb(29, 52, 68);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 620px;
+}
+.c1 h1 {
+  color: rgb(245, 138, 7);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.c1 h2 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 106.5%;
+  letter-spacing: -3%;
+  text-align: left;
+  margin-top: 16px;
+}
+.c1 h3 {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 16px;
+  max-width: 264px;
+}
+.c1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+  margin-top: 64px;
+  margin-bottom: 108px;
+}

@@ -1,0 +1,91 @@
+footer {
+  background: rgb(6, 50, 85);
+  padding: 80px 0;
+}
+footer svg {
+  color: white;
+}
+.f {
+  display: flex;
+  align-items: start;
+  gap: 120px;
+  justify-content: center;
+}
+.f1 h1 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -3%;
+  text-align: left;
+  max-width: 351px;
+  margin: 32px 0;
+}
+.f2 h1 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.f2 p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 16px;
+}
+.f3 h1 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.f3 input {
+  border-radius: 31px;
+  background: rgb(255, 255, 255);
+  width: 342px;
+  padding: 18px 32px;
+  outline: none;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.f3 button {
+  border-radius: 31px;
+  background: rgb(245, 138, 7);
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 106.5%;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 18px 32px;
+  border-style: none;
+}
+.f4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 80px;
+}
