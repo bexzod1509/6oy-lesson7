@@ -8,6 +8,8 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Latest from "./components/Latestblog/Latest";
+import Product from "./pages/products/Product";
+import Singleroute from "./pages/singleroute/Singleroute";
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/cards" element={<Product />} />
+        <Route path="/product/:id" element={<Singleroute />} />
       </Routes>
       <Latest />
       <Footer />

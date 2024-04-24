@@ -16,6 +16,7 @@ function Navbar() {
             <NavLink to={"/service"}>Services</NavLink>
             <NavLink to={"/blog"}>Blog</NavLink>
             <NavLink to={"/"}>Contact us</NavLink>
+            <NavLink to={"/cards"}>Products</NavLink>
             <button>Clone project</button>
           </div>
         </nav>

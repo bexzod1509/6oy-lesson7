@@ -8,7 +8,11 @@ import { useLocation } from "react-router-dom";
 
 function Latest() {
   let { pathname } = useLocation();
-  if (pathname.includes("/blog")) {
+  if (
+    pathname.includes("/blog") ||
+    pathname.includes("/cards") ||
+    pathname.includes("/product")
+  ) {
     return <></>;
   }
   return (
