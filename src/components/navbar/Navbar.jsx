@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/Logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import axios from "../../api/index";
 function Navbar() {
@@ -40,10 +40,12 @@ function Navbar() {
             <div className="bar1">
               {reveal?.length != 30
                 ? reveal?.slice(0, 8).map((e) => (
-                    <div key={e.id} className="bar4">
-                      <img src={e.images[0]} alt="" />
-                      <p>{e.title}</p>
-                    </div>
+                    <Link to={`/product/${e.id}`}>
+                      <div key={e.id} className="bar4">
+                        <img src={e.images[0]} alt="" />
+                        <p>{e.title}</p>
+                      </div>
+                    </Link>
                   ))
                 : ""}
             </div>
