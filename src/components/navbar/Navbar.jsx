@@ -39,7 +39,7 @@ function Navbar() {
             </div>
             <div className="bar1">
               {reveal?.length != 30
-                ? reveal?.map((e) => (
+                ? reveal?.slice(0, 8).map((e) => (
                     <div key={e.id} className="bar4">
                       <img src={e.images[0]} alt="" />
                       <p>{e.title}</p>
