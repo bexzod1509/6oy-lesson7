@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
+import { IoSearch } from "react-icons/io5";
+import axios from "../../api/index";
 function Navbar() {
+  const [reveal, setReveal] = useState([]);
+  const [info, setInfo] = useState("");
+  useEffect(() => {
+    axios
+      .get(`https://dummyjson.com/products/search?q=${info}`)
+      .then((res) => setReveal(res.data.products))
+      .catch((err) => console.log(err));
+  }, [info]);
+  // let out = reveal?.map((e) => (
+  //   <div key={e.id} className="bar1">
+  //     <p>{e.title}</p>
+  //   </div>
+  // ));
   return (
     <header>
       <div className="container">
@@ -10,6 +25,30 @@ function Navbar() {
           <NavLink to={"/"}>
             <img src={logo} alt="" />
           </NavLink>
+          <div className="bar">
+            <div className="bar2">
+              <input
+                type="search"
+                value={info}
+                onChange={(e) => setInfo(e.target.value)}
+                name=""
+                id=""
+                placeholder="Search..."
+              />
+              <IoSearch />
+            </div>
+            <div className="bar1">
+              {reveal?.length != 30
+                ? reveal?.map((e) => (
+                    <div key={e.id} className="bar4">
+                      <img src={e.images[0]} alt="" />
+                      <p>{e.title}</p>
+                    </div>
+                  ))
+                : ""}
+            </div>
+          </div>
+
           <div className="a">
             <NavLink to={"/about"}>About Us</NavLink>
             <NavLink to={"/careers"}>Careers</NavLink>
@@ -17,7 +56,6 @@ function Navbar() {
             <NavLink to={"/blog"}>Blog</NavLink>
             <NavLink to={"/"}>Contact us</NavLink>
             <NavLink to={"/cards"}>Products</NavLink>
-            <button>Clone project</button>
           </div>
         </nav>
       </div>
