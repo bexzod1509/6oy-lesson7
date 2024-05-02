@@ -13,11 +13,6 @@ function Navbar() {
       .then((res) => setReveal(res.data.products))
       .catch((err) => console.log(err));
   }, [info]);
-  // let out = reveal?.map((e) => (
-  //   <div key={e.id} className="bar1">
-  //     <p>{e.title}</p>
-  //   </div>
-  // ));
   return (
     <header>
       <div className="container">
@@ -40,7 +35,7 @@ function Navbar() {
             <div className="bar1">
               {reveal?.length != 30
                 ? reveal?.slice(0, 8).map((e) => (
-                    <Link to={`/product/${e.id}`}>
+                    <Link onClick={() => setInfo("")} to={`/product/${e.id}`}>
                       <div key={e.id} className="bar4">
                         <img src={e.images[0]} alt="" />
                         <p>{e.title}</p>

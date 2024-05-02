@@ -11,12 +11,12 @@ function Singleroute() {
       .get(`/products/${id}`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   return (
     <div className="container">
       <div className="products">
-        <div className="p">
+        <div key={products?.id} className="p">
           <img className="p-image" src={products?.images[0]} alt="" />
           <div className="p1">
             <div className="d1" style={{ justifyContent: "center" }}>
